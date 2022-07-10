@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+   japp:
+      image: "japp:$BUILD_TAG"
+      build:
+        context: .
+        dockerfile: Dockerfile-Java
