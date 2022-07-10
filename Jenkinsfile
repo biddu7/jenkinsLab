@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+       PASS = credentials('Docker_PSW')
+    }    
+
     stages {
 
         stage('build') {

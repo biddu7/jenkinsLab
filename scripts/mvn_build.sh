@@ -4,6 +4,8 @@ echo "************************************************************"
 echo "****************BUILDING JAR (using Maven)******************"
 echo "************************************************************"
 
+#Pipeline project > Workspace relative path update
+REL_PATH=/home/jenkins/jenkins-data/jenkins_home/workspace/Automatic_CI_CD
 
-docker run --rm -v $PWD/javaApp:/app -v /root/.m2/:/root/.m2/ -w /app maven:3.6.0 "$@"
+docker run --rm -v $REL_PATH/javaApp:/app -v /root/.m2/:/root/.m2/ -w /app maven:3.6.0 "$@"
 
