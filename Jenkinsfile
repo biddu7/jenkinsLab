@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+       IMAGE = 'japp'
        PASS = credentials('Docker_PSW')
     }    
 
