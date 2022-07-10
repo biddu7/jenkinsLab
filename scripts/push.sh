@@ -8,8 +8,8 @@ echo "************************************************************"
 docker login -u joy2022 -p $PASS
 
 #Tagging IMAGE before push
-docker tag $IMAGE:$BUILD_TAG joy2022/$IMAGE:$BUILD_TAG
+docker tag $IMAGE:$BUILD_NUMBER joy2022/$IMAGE:$BUILD_NUMBER
 
 #Pushing the image to docker hub repo
-docker push joy2022/$IMAGE:$BUILD_TAG
+docker push joy2022/$IMAGE:$BUILD_NUMBER
 

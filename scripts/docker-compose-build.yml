@@ -3,7 +3,7 @@ version: '3'
 services:
 
    japp:
-      image: "japp:$BUILD_TAG"
+      image: "japp:$BUILD_NUMBER"
       build:
         context: .
         dockerfile: Dockerfile-Java

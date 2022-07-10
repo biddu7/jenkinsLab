@@ -2,5 +2,5 @@ version: '3'
 services:
 
   japp:
-    image: "joy2022/$IMAGE:$BUILD_TAG"
+    image: "joy2022/$IMAGE:$BUILD_NUMBER"
     container_name: japp

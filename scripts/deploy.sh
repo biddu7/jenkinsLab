@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo japp > /tmp/.auth
-echo $BUILD_TAG >> /tmp/.auth
+echo $BUILD_NUMBER >> /tmp/.auth
 echo $PASS >> /tmp/.auth
 
 REL_PATH=/home/jenkins/jenkins-data/jenkins_home/workspace/Automatic_CI_CD

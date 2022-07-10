@@ -3,7 +3,7 @@
 #Retrieve parameter values from /tmp/.auth file
 
 export IMAGE=$(sed -n '1p' /tmp/.auth)
-export BUILD_TAG=$(sed -n '2p' /tmp/.auth)
+export BUILD_NUMBER=$(sed -n '2p' /tmp/.auth)
 export PASS=$(sed -n '3p' /tmp/.auth)
 
 docker login -u joy2022 -p $PASS
