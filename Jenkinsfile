@@ -13,7 +13,7 @@ pipeline {
                 sh '''
                     ./scripts/mvn_build.sh mvn -B -DskipTests clean package
                     ./scripts/build.sh
-                '''    
+                   '''    
             }
         }
 
