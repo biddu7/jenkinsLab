@@ -19,9 +19,8 @@ pipeline {
 
         stage('test') {
             steps {
-                sh '''    
-                    ./scripts/mvn_test.sh mvn test
-                '''    
+                sh ' ./scripts/mvn_test.sh mvn test  '
+                    
             }
         }
 
